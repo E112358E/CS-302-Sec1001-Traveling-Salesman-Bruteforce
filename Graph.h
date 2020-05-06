@@ -1,16 +1,22 @@
 #ifndef GRAPH_H
 #define GRAPH_H
 
-#include "vertex.h"
-class graph
+#include <string>
+#include "Vertex.h"
+class Graph
 {
-Private:
-	Vertex** Adjacency List;
-	Vertex* Label[];
+private:
+	Vertex* adjacencyList[];
+	string label[];
+	int numberOfVertex;
 
-Public:
+public:
+	graph();
+	~graph();
+
 	Bool add(Vertex target);
 	//Create adds a vertex into the graph, manipulate Adjacency List (no edges/connections), returns true if successful, false if not
+
 	Bool remove(Vertex target);
 	//Removes the target vertex, returns true if successful, false if not
 
@@ -23,13 +29,13 @@ Public:
 	Float getEdgeWeight(Vertex Start, Vertex End) const;
 	//gets the weight of the edge from Start to End vertex, returns a negative number if there is no edge from Start to End vertex. ()
 	
-	void Bruteforce();
+	void bruteforce();
 	//returns shortest path and also prints out all the possible path in another text file
 
-	Void Aux(float distance, Vertex* current, Vertex* end, bool[] seen)
+	Void aux(float distance, Vertex* current, Vertex* end, bool[] seen)
 	//***Possible auxiliary function that does the recursive function/nature for the Bruteforce
 
 	Float depthFirstTraversal(???Bool seen[];???) - recursive (permutations)
 };
-#include "graph.cpp"
+#include "Graph.cpp"
 #endif //GRAPH_H_
