@@ -1,12 +1,15 @@
 #include "graph.h"
 
 
-graph()
+Graph::graph(): numberOfVertex(0)
 {
-
+  for(int i = 0; i < MAX_NUM_VERTEX; i++)
+  {
+    adjacencyList[i] = nullptr;
+  }
 }
 
-~graph()
+Graph::~graph()
 {
 
 }
