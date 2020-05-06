@@ -2,12 +2,14 @@
 #define GRAPH_H
 
 #include <string>
-#include "Vertex.h"
+#include "vertex.h"
+
+#define MAX_NUM_VERTEX 10
 class Graph
 {
 private:
-	Vertex* adjacencyList[];
-	std::string label[];
+	Vertex* adjacencyList[MAX_NUM_VERTEX];
+	string label[MAX_NUM_VERTEX];
 	int numberOfVertex;
 
 public:
