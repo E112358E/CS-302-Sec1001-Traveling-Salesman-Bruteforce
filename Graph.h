@@ -7,7 +7,7 @@ class Graph
 {
 private:
 	Vertex* adjacencyList[];
-	string label[];
+	std::string label[];
 	int numberOfVertex;
 
 public:
