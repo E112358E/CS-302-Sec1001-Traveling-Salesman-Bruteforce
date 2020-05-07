@@ -2,7 +2,7 @@
 #define GRAPH_H
 
 #include <string>
-#include "vertex.h"
+#include "Vertex.h"
 
 #define MAX_NUM_VERTEX 10
 class Graph
