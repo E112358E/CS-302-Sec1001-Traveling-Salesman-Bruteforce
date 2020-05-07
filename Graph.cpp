@@ -48,6 +48,7 @@ Bool Graph::remove(Vertex target)
 				for (int j = n; j < numberOfVertex; j++) //shifting the list down by one
 				{
 				adjacencyList[j] = adjacencyList[j+1]
+				label[j] = label[j+1]
 				}
 			
 			}
