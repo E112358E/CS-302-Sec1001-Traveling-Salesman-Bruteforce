@@ -34,8 +34,6 @@ Bool Graph::add(Vertex target)
 
 Bool Graph::remove(Vertex target)
 {
-Bool Graph::remove(Vertex target)
-{
 
 	if(numberOfVertex!=0)
 	{
