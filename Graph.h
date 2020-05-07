@@ -13,8 +13,8 @@ private:
 	int numberOfVertex;
 
 public:
-	graph();
-	~graph();
+	Graph();
+	~Graph();
 
 	Bool add(Vertex target);
 	//Create adds a vertex into the graph, manipulate Adjacency List (no edges/connections), returns true if successful, false if not
