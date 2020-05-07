@@ -3,38 +3,45 @@
 
 #include <string>
 
-class Graph;
+class graph;
 
 class Vertex
 {
-  friend Graph;
-  private:
+friend graph;
+
+private:
       vertex* p;
       float weight;
       std::string cityName;
-  public:
-	    void setVertexPtr(Vertex* newVertex)
+public:
+      void setVertexPtr(Vertex* newVertex)
       {
-        p = newVertex;
+      p = newVertex;
       }
-	    Vertex* getVertexPtr() const
+
+      Vertex* getVertexPtr() const
       {
-        return p;
+      return p;
       }
-	    void setWeight(Float newWeight)
+
+      void setWeight(Float newWeight)
       {
-        weight = newWeight;
+      weight = newWeight;
       }
-	    float getweight() const
+
+      float getweight() const
       {
-        return weight;
+      return weight;
       }
-	    void setName(const std::string name)
+
+      void setName(const std::string name)
       {
-        cityName = name;
+      cityName = name;
       }
-	    std::string getName() const
+
+      std::string getName() const
       {
-        return cityName;
+      return cityName;
       }
+
 };
