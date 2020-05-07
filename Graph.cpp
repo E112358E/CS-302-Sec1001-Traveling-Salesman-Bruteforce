@@ -34,7 +34,28 @@ Bool Graph::add(Vertex target)
 
 Bool Graph::remove(Vertex target)
 {
+Bool Graph::remove(Vertex target)
+{
 
+	if(numberOfVertex!=0)
+	{
+		for(int n=0; n<numberOfVertex; n++)
+		{
+			if(label[n]==target.getName())
+			{
+			adjacencyList[n]=NULL;
+			label[n]=NULL;
+			numberOfVertex--;
+			}
+
+		}
+	return true;
+	}
+
+	else
+	{
+	return false;
+	}
 }
 
 Bool Graph::setEdge(const Vertex Start, const Vertex End, const float newWeight)
