@@ -1,4 +1,4 @@
-#include "graph.h"
+#include "Graph.h"
 
 
 Graph::Graph(): numberOfVertex(0)
@@ -6,6 +6,7 @@ Graph::Graph(): numberOfVertex(0)
   for(int i = 0; i < MAX_NUM_VERTEX; i++)
   {
     adjacencyList[i] = nullptr;
+    label[i] = NULL;
   }
 }
 
@@ -18,7 +19,10 @@ Bool Graph::add(Vertex target)
 {
 	if(numberOfVertex<MAX_NUM_VERTEX)
 	{
-	
+	adjacencyList[numberOfVertex]=target;
+	label[numberOfVertex]=target.getName();
+	numberOfVertex++;
+	return true;
 	}
 
 	else
