@@ -3,11 +3,11 @@
 
 #include <string>
 
-class graph;
+class Graph;
 
 class Vertex
 {
-friend graph;
+friend Graph;
 
 private:
       vertex* p;
